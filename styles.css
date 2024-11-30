@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-color: rgb(104, 75, 177);
+    color: white;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image-container {
+    width: 40%;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.text-container {
+    width: 40%;
+}
+
+h1 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p {
+    margin: 24px 0;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 18px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    color: rgb(104, 75, 177);
+    font-size: 18px;
+    border-style: none;
+    border-radius: 28px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 25%);
+    transition: 0.15s;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+}
+
+svg {
+    width: 50px;
+    fill: white;
+    border-radius: 999px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    padding: 10px;
+    transition: 0.15s;
+}
+
+.icon {
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: rgb(232, 128, 232);
+    color: white;
+    cursor: pointer;
+}
+
+svg:hover {
+    border-color: rgb(255, 82, 193);
+    fill: rgb(255, 82, 193);
+    cursor: pointer;
+}
+
+@media (min-width:868px) and (max-width:1096px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    button {
+        width: 125px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media (min-width:481px) and (max-width:867px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    button {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    button {
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        position: static;
+    }
+
+    header img {
+        width: 75%;
+    }
+
+    footer {
+        position: static;
+    }
+
+    .container {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    svg {
+        width: 40px;
+        padding: 8px;
+    }
+}
